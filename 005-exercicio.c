@@ -1,3 +1,6 @@
+/* Exerc√≠cio 05 - Escreva um programa que alimente um vetor com 5 n√∫meros. Apresente na tela o menor valor do vetor, o maior valor do vetor, 
+a soma dos valores do vetor e a m√©dia dos valores do vetor. */ 
+
 #include<stdio.h>
 #include<locale.h>
 
@@ -12,7 +15,7 @@ int main(){
 	maior = vet[0];
 
 	for(i = 0; i < 5; i++) {
-		printf("Informe o valor para a posiÁ„o [%d]: ", i);
+		printf("Informe o valor para a posi√ß√£o [%d]: ", i);
 		scanf("%d", &vet[i]);
 		if (vet[i] < menor) {
 			menor = vet[i];
@@ -24,10 +27,10 @@ int main(){
  	}
 	
 	media = soma / 5.0;
-	printf("\nO maior valor È: %d", maior);
-	printf("\nO menor valor È: %d", menor);
-	printf("\nA soma dos valores informados È: %d", soma);
-	printf("\nA mÈdia dos valores informados È: %.1f", media);
+	printf("\nO maior valor √©: %d", maior);
+	printf("\nO menor valor √©: %d", menor);
+	printf("\nA soma dos valores informados √©: %d", soma);
+	printf("\nA m√©dia dos valores informados √©: %.1f", media);
 	
 	
 	
