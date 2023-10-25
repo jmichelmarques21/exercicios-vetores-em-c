@@ -1,3 +1,6 @@
+/* Exercício 11 - Tentando descobrir se um dado era viciado, um dono de cassino honesto (risos) o lançou 15 vezes. Escreva um algoritmo que dados os 
+resultados dos lançamentos, armazene em um vetor o número de ocorrências de cada face. Apresente o resultado na tela. */
+
 #include<stdio.h>
 #include<locale.h>
 
@@ -15,12 +18,12 @@ int main(){
 		if(jogadas[i] >= 1 && jogadas[i] <= 6) {
 			faces[jogadas[i] - 1]++;
 		} else {
-			printf("Valor inv�lido, digite um n�mero entre 1 e 6! ");
+			printf("Valor inválido, digite um número entre 1 e 6! ");
 			i--;
 		}
 	}
 	
-	printf("N�mero de ocorr�ncias de cada face do dado: \n");
+	printf("Número de ocorrências de cada face do dado: \n");
 	for (i = 0; i < 6; i++){
 		printf("Face %d: %d vezes.\n", i + 1, faces[i]);
 	}
