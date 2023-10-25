@@ -1,3 +1,6 @@
+/* Exerc√≠cio 07 - Escreva um programa que armazene 5 n√∫meros em um vetor e apresente uma listagem contendo o √≠ndice do elemento e uma das mensagens: 
+par ou √≠mpar. */
+
 #include<stdio.h>
 #include<locale.h>
 
@@ -7,18 +10,18 @@ int main(){
 	int i, vetor[5];
 	
 	for (i = 0; i < 5; i++){
-		printf("Informe o valor para a posiÁ„o [%d]: ", i);
+		printf("Informe o valor para a posi√ß√£o [%d]: ", i);
 		scanf("%d", &vetor[i]);
 	}
 	
 	printf("\n");
 	
 	for(i = 0; i < 5; i++){
-		printf("\nPosiÁ„o [%d]: ", i);
+		printf("\nPosi√ß√£o [%d]: ", i);
 		if (vetor[i] % 2 == 0) {
 			printf("%d - Par!", vetor[i]);
 		} else {
-			printf("%d - Õmpar!", vetor[i]);
+			printf("%d - √çmpar!", vetor[i]);
 		}
 	}
 	
