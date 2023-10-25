@@ -1,3 +1,6 @@
+/* Exerc√≠cio - Escreva um programa que alimente um vetor A com 5 n√∫meros inteiros. Em um vetor B, armazene o dobro de cada um dos n√∫meros vetor A 
+e apresente o vetor B na tela  */
+
 #include<stdio.h>
 #include<locale.h>
 
@@ -7,7 +10,7 @@ int main(){
 	int vetA[5], vetB[5], i;
 	
 	for(i = 0; i < 5; i++) {
-		printf("Informe o valor para a posiÁ„o [%d]: ", i);
+		printf("Informe o valor para a posi√ß√£o [%d]: ", i);
 		scanf("%d", &vetA[i]);
 	}
 	
@@ -17,7 +20,7 @@ int main(){
 	
 	printf("\nVETOR B:\n");
 	for(i = 0; i < 5; i++) {
-		printf("Valor na posiÁ„o [%d]: %d\n", i, vetB[i]);
+		printf("Valor na posi√ß√£o [%d]: %d\n", i, vetB[i]);
 	}
 	
 	
