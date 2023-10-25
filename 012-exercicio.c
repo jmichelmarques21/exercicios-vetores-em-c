@@ -1,3 +1,6 @@
+/* Exerc√≠cio 12- Escreva um programa que alimente um vetor G de 6 elementos contendo o gabarito da Mega-Sena e um vetor A de 10 elementos contendo uma aposta. 
+A seguir, mostre na tela quantos pontos fez o apostador. */
+
 #include<stdio.h>
 #include<locale.h>
 
@@ -8,14 +11,14 @@ int main(){
 	pontos = 0;
 	
 	for(i = 0; i < 6; i++){
-		printf("Gabarito posiÁ„o %d: ", i + 1);
+		printf("Gabarito posi√ß√£o %d: ", i + 1);
 		scanf("%d", &vetG[i]);
 	}	
 	
 	printf("\n");
 	
 	for(i = 0; i < 10; i++){
-		printf("Informe o %d n˙mero apostado: ", i + 1);
+		printf("Informe o %d n√∫mero apostado: ", i + 1);
 		scanf("%d", &vetA[i]);
 	}
 
