@@ -1,3 +1,6 @@
+/* Exercício 03 - Escreva um programa que alimente um vetor com 5 números e calcule a média destes valores. Na sequência, apresente na tela os valores que 
+são iguais ou superiores à média. */
+
 #include<stdio.h>
 #include<locale.h>
 
@@ -11,17 +14,17 @@ int main(){
 	
 	//Inicializando o vetor:
 	for (i = 0; i < 5; i++) {
-		printf("Informe o valor para a posi��o [%d]: ", i);
+		printf("Informe o valor para a posição [%d]: ", i);
 		scanf("%d", &vetor[i]);
 		soma += vetor[i];
 	}
 	
-	//Imprimindo a m�dia:
+	//Imprimindo a média:
 	media = soma / 5,0;
-	printf("\nM�dia: %.1f\n", media);
+	printf("\nMédia: %.1f\n", media);
 	
 	//Comparando valores iguais: 
-	printf("\nValores iguais ou maiores do que a m�dia:");
+	printf("\nValores iguais ou maiores do que a média:");
 	for(i = 0; i < 5; i++) {
 		if (vetor[i] >= media) {
 			printf("\n%d", vetor[i]);
